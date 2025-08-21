@@ -10,7 +10,7 @@ It uses the **Kaggle Credit Card Fraud Dataset**, applies preprocessing and feat
 
 * Preprocesses raw transaction data (scaling, handling class imbalance).
 * Supports **real-time fraud detection** by passing new transactions for prediction.
-* Uses **RandomForestClassifier** with hyperparameter tuning via `GridSearchCV` / `RandomizedSearchCV`.
+* Uses **RandomForestClassifier**.
 * Evaluation metrics: **accuracy, precision, recall, F1-score, ROC-AUC**.
 * Provides ability to save trained models for later use.
 
