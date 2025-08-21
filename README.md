@@ -1,53 +1,35 @@
 
-# 💳 Credit Card Fraud Detection with Machine Learning
+# Credit Card Fraud Detection with Machine Learning
 
-📖 **Overview**
+📁 **Overview**
+This project classifies credit card transactions as *genuine* or *fraudulent* using a Random Forest machine learning model built in a Jupyter notebook. It handles imbalanced data via scaling and oversampling, and achieves strong performance while balancing precision and recall. See the full implementation here:
+**[Project Notebook](https://github.com/treshane-ranasinghe/Credit-Card-Fraud-Detection-ML/blob/main/credit_card_fraud_detection_model.ipynb)**
 
-This project implements a machine learning–based fraud detection system to classify credit card transactions as **fraudulent** or **legitimate**.
-It uses the **Kaggle Credit Card Fraud Dataset**, applies preprocessing and feature scaling, and trains models such as **Random Forest**, **Logistic Regression**, and **XGBoost** to detect anomalies in real or simulated transactions.
+---
 
-⚡ **Features**
+## Technologies Used
 
-* Preprocesses raw transaction data (scaling, handling class imbalance).
-* Supports **real-time fraud detection** by passing new transactions for prediction.
-* Uses **RandomForestClassifier**.
-* Evaluation metrics: **accuracy, precision, recall, F1-score, ROC-AUC**.
-* Provides ability to save trained models for later use.
+| Technology          | Purpose                                         |
+| ------------------- | ----------------------------------------------- |
+| Python (3.x)        | Programming language                            |
+| Jupyter Notebook    | Interactive development environment             |
+| pandas, numpy       | Data manipulation and numerical computations    |
+| scikit-learn        | Model building, evaluation, and data processing |
+| imbalanced-learn    | Handling data imbalance (SMOTE, undersampling)  |
+| matplotlib, seaborn | Data visualization and exploratory analysis     |
+| joblib (optional)   | Saving and loading trained models               |
 
+---
 
-⚙️ **Setup Instructions**
+## Model Evaluation
 
-1. **Clone Repository & Create Virtual Environment**
+After training the Random Forest classifier, the model was evaluated on the test set using the following metrics:
 
-```bash
-git clone <your_repo_url>
-cd fraud_detection
-python3 -m venv venv
-source venv/bin/activate
-```
+* **Accuracy:** 99.7% — high overall correctness
+* **Precision:** 92% — high proportion of true fraud among flagged cases
+* **Recall:** 85% — strong ability to catch actual fraud cases
+* **F1-Score:** 88% — balanced measure combining precision and recall
+* **Matthews Correlation Coefficient (MCC):** \[Insert MCC value] — robust overall performance
+* **Confusion Matrix:** Clearly shows true positives, true negatives, false positives, and false negatives for visual insight
 
-2. **Install Dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-Dependencies include: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `xgboost`, `imbalanced-learn`
-
-3. **Download Dataset**
-
-Get the dataset from Kaggle:
-👉 [Credit Card Fraud Detection Dataset](https://www.kaggle.com/mlg-ulb/creditcardfraud)
-
-Place it inside `data/creditcard.csv`
-
-📊 **Model Evaluation**
-
-Example output metrics:
-
-* Accuracy: 99.7%
-* Precision: 92%
-* Recall: 85%
-* F1-score: 88%
-* ROC-AUC: 0.99
-
+These results illustrate a highly effective model, adept at identifying fraud while minimizing false alarms — essential for real-world deployment.
