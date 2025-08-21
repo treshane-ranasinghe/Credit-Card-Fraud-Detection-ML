@@ -1,6 +1,3 @@
-Got it ✅ You want a README for your **Credit Card Fraud Detection** project, in the same structured style as the **Medical Chatbot with RAG** example you shared. Here’s a draft you can use/adapt:
-
----
 
 # 💳 Credit Card Fraud Detection with Machine Learning
 
